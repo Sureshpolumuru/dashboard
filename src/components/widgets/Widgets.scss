@@ -1,0 +1,63 @@
+.widget {
+    // margin-right: 20px;
+    display: flex;
+    // width: 200px;
+    flex: 1;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    // -webkit-box-shadoow: 2px 4px 10px 1px rgba(0, 0, 0, 0.50);
+    // box-shadow: 2px 4px 10px 1px rgba(225, 191, 191, 0.5) ;
+        //   OR  //
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(131, 127, 127, 0.75);
+
+    .left,
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        .title {
+            font-size: 14px;
+            font-weight: bold;
+            color: gray;
+        }
+
+        .counter {
+            font-style: 28px;
+            font-weight: 300;
+        }
+
+        .link {
+            width: max-content;
+            font-style: 15px;
+            border-bottom: 1px solid grey;
+        }
+
+        .percentage {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+
+            &.positive {
+                color: green;
+            }
+
+            &.negative {
+                color: red;
+            }
+        }
+
+        .icon {
+            font-size: 18px;
+            padding: 5px;
+            background-color :rgba(151, 57, 129, 0.548);
+            border-radius: 5px;
+            align-self: flex-end;
+        }
+    }
+}
